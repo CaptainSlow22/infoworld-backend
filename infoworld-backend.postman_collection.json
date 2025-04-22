@@ -1,0 +1,494 @@
+{
+	"info": {
+		"_postman_id": "fd6522af-d522-41ac-831d-bacce8f714fd",
+		"name": "infoworld-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25266890"
+	},
+	"item": [
+		{
+			"name": "clienti",
+			"item": [
+				{
+					"name": "Vezi toti clientii",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vezi client dupa id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienti/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adauga client nou",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nume\": \"Cozmescu\",\r\n    \"prenume\": \"Dragos\",\r\n    \"numarTelefon\": \"0768520958\",\r\n    \"email\": \"dragoscozmescu@gmail.com\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sterge client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienti/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifica client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numarTelefon\": \"0758395618\",\r\n    \"email\": \"andrei1234@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adauga masina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numarInmatriculare\": \"B-56-MIE\",\r\n    \"serieSasiu\": \"5NPDH4AE0DH213924\",\r\n    \"marca\": \"Hyundai\",\r\n    \"model\": \"Elantra\",\r\n    \"anulFabricatiei\": 2013,\r\n    \"tipMotorizare\": \"Hibrid\",\r\n    \"capacitateMotor\": 1600,\r\n    \"caiPutere\": 110\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sterge masina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienti/2/WAUZB64B05N001234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"2",
+								"WAUZB64B05N001234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifica masina",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numarInmatriculare\": \"B-144-AGE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti/3/1FTFW1ET4EKG03412",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"3",
+								"1FTFW1ET4EKG03412"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "programari",
+			"item": [
+				{
+					"name": "Vezi toate programarile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/programari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"programari"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vezi programare dupa id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/programari/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"programari",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adauga programare noua",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"metoda\": \"Telefon\",\r\n    \"clientId\": 5,\r\n    \"serieSasiu\": \"KMHGH4JH8GU123456\",\r\n    \"actiune\": \"Schimb discuri de frana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/programari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"programari"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "Seteaza intervalul unei programari",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"interval\": \"09:00-09:30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "service",
+			"item": [
+				{
+					"name": "Vezi tot istoricul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/service",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vezi istoric dupa id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/service/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"service",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adauga in istoric",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programareId\": 3,\r\n    \"defecteVizuale\": [\"Aripa fata zgariata\", \"Grila ruginita\"],\r\n    \"motiv\": \"Revizie\",\r\n    \"operatiuni\": \"Schimbat ulei\",\r\n    \"reparatii\": \"Aripa fata\",\r\n    \"durata\": 60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/service",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"service"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "statistici",
+			"item": [
+				{
+					"name": "Afla totalul programarilor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistici/total-programari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistici",
+								"total-programari"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Afla numarul mediu de programari",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistici/medie-programari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistici",
+								"medie-programari"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Afla timpul mediu al reparatiei",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistici/timp-mediu-reparatie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistici",
+								"timp-mediu-reparatie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Afla top 5 marci ca frecventa in service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistici/top-marci-frecventa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistici",
+								"top-marci-frecventa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Afla distributia tipurilor de motorizare",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/statistici/distributie-motorizari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"statistici",
+								"distributie-motorizari"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
