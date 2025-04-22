@@ -1,6 +1,6 @@
 # infoworld-backend
 
-Aplicatia este realizata cu Node si Express, iar baza de date este simulata cu obiecte JSON
+Aplicatia este realizata cu Node si Express, iar baza de date este simulata cu obiecte JSON. Functionalitatea extra consta intr-o serie de statistici despre clienti si activitatea service-ului
 
 ## Mod de rulare
 
